@@ -1,0 +1,19 @@
+.Link--container {
+  width: '70vw';
+  display: 'flex';
+  align-items: 'center';
+  justify-content: 'center';
+}
+
+.link {
+  font-size: 21px;
+  font-weight: 600;
+  text-decoration: none;
+  margin: 0 45px;
+  color: #454545;
+  user-select: none;
+}
+
+.link:hover {
+  opacity: 40%;
+}
