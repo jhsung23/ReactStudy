@@ -1,0 +1,29 @@
+.header {
+  display: flex;
+  width: 100vw;
+  align-items: center;
+  flex-direction: column;
+}
+
+.header__bar--wrapper {
+  width: 100vw;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-width: 800px;
+}
+
+.velog-name--img {
+  width: 260px;
+  margin-left: 200px;
+}
+
+.velog-menu-bar--img {
+  width: 300px;
+  margin-right: 200px;
+}
+
+.velog-user-view--img {
+  width: 60%;
+}
