@@ -1,9 +1,9 @@
-import CSSModule from './CSSModule.js';
+import StyledComponent from './StyledComponent.js';
 
 function App() {
   return (
     <div>
-      <CSSModule />
+      <StyledComponent />
     </div>
   );
 }
