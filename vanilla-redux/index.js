@@ -58,3 +58,15 @@ const render = () => {
 
 render();
 store.subscribe(render);
+
+// dispatch : Action을 발생시킨다.
+// action 객체를 파라미터로 주고, 디스패치가 호출되면 리듀서 함수를 실행시킨다.
+divToggle.onclick = () => {
+  store.dispatch(toggleSwitch());
+};
+btnIncrease.onclick = () => {
+  store.dispatch(increase(1));
+};
+btnDecrease.onclick = () => {
+  store.dispatch(decrease());
+};
