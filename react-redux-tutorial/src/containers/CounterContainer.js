@@ -1,3 +1,4 @@
+import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 import Counter from '../components/Counter';
 import { increase, decrease } from '../modules/counter';
@@ -33,4 +34,20 @@ export default connect(mapStateToProps, mapDispatchToProps)(CounterContainer);
 //       dispatch(decrease());
 //     },
 //   }),
+// )(CounterContainer);
+
+// 방법 3. bindActionCreators 사용
+// export default connect(
+//   (state) => ({
+//     number: state.counter.number,
+//   }),
+//   (dispatch) => bindActionCreators({ increase, decrease }, dispatch),
+// )(CounterContainer);
+
+// 방법 4. dispatch 함수 대신 객체 형태로 넣어주기
+// export default connect(
+//   (state) => ({
+//     number: state.counter.number,
+//   }),
+//   { increase, decrease },
 // )(CounterContainer);
