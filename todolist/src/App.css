@@ -1,0 +1,13 @@
+* {
+  box-sizing: border-box;
+}
+
+.app {
+  width: 100vw;
+  height: 100vh;
+  background: #e5edfa;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
