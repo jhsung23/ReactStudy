@@ -13,3 +13,29 @@ export const insert = createAction(INSERT, (content) => ({
 }));
 export const remove = createAction(REMOVE, (id) => id);
 export const toggle = createAction(TOGGLE, (id) => id);
+
+// initial state
+export const initialState = {
+  todos: [
+    {
+      id: 1,
+      content: 'Redux 초기 상태와 Action Creator 만들기',
+      isDone: true,
+    },
+    {
+      id: 2,
+      content: 'Redux 리듀서 함수 만들기',
+      isDone: true,
+    },
+    {
+      id: 3,
+      content: 'Redux 디스패쳐 만들기',
+      isDone: false,
+    },
+    {
+      id: 4,
+      content: 'Redux 스토어 만들기',
+      isDone: false,
+    },
+  ],
+};
