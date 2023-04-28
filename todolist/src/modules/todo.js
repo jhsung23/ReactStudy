@@ -43,13 +43,13 @@ export const initialState = {
 // reducer
 const todo = handleActions(
   {
-    INSERT: (state, { payload: todo }) => ({
+    [INSERT]: (state, { payload: todo }) => ({
       todos: [...state.todos, todo],
     }),
-    REMOVE: (state, { payload: id }) => ({
+    [REMOVE]: (state, { payload: id }) => ({
       todos: state.todos.filter((todo) => todo.id !== id),
     }),
-    TOGGLE: (state, { payload: id }) => ({
+    [TOGGLE]: (state, { payload: id }) => ({
       todos: state.todos.map((todo) => (todo.id === id ? { ...todo, isDone: !todo.isDone } : todo)),
     }),
   },
